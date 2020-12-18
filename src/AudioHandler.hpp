@@ -12,6 +12,9 @@ class AudioHandler {
         bool Stop();
         
         double lastValues[2];
+        double freq = 440.0;
+        unsigned phase = 0;
+        unsigned sampleRate = 48000;
 
     private:
         RtAudio audio;
